@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A MathML builder should generate <mphantom> nodes for \\phantom 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mphantom>
+        <mi>
+          x
+        </mi>
+      </mphantom>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\phantom{x}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should generate the right types of nodes 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mi>
+        sin
+      </mi>
+      <mo>
+        ⁡
+      </mo>
+      <mrow>
+        <mi>
+          x
+        </mi>
+      </mrow>
+      <mo>
+        +
+      </mo>
+      <mn>
+        1
+      </mn>
+      <mspace width="0.277778em">
+      </mspace>
+      <mtext>
+        a
+      </mtext>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\sin{x}+1\\;\\text{a}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should make prime operators into <mo> nodes 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <msup>
+        <mi>
+          f
+        </mi>
+        <mo mathvariant="normal">
+          ′
+        </mo>
+      </msup>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      f&#x27;
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should render mathchoice as if there was nothing 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mstyle scriptlevel="0"
+              displaystyle="true"
+      >
+        <mrow>
+          <munderover>
+            <mo>
+              ∑
+            </mo>
+            <mrow>
+              <mi>
+                k
+              </mi>
+              <mo>
+                =
+              </mo>
+              <mn>
+                0
+              </mn>
+            </mrow>
+            <mi mathvariant="normal">
+              ∞
+            </mi>
+          </munderover>
+          <msup>
+            <mi>
+              x
+            </mi>
+            <mi>
+              k
+            </mi>
+          </msup>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\displaystyle\\mathchoice{\\sum_{k = 0}^{\\infty} x^k}{T}{S}{SS}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should render mathchoice as if there was nothing 2`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mrow>
+        <msubsup>
+          <mo>
+            ∑
+          </mo>
+          <mrow>
+            <mi>
+              k
+            </mi>
+            <mo>
+              =
+            </mo>
+            <mn>
+              0
+            </mn>
+          </mrow>
+          <mi mathvariant="normal">
+            ∞
+          </mi>
+        </msubsup>
+        <msup>
+          <mi>
+            x
+          </mi>
+          <mi>
+            k
+          </mi>
+        </msup>
+      </mrow>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\mathchoice{D}{\\sum_{k = 0}^{\\infty} x^k}{S}{SS}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should render mathchoice as if there was nothing 3`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <msub>
+        <mi>
+          x
+        </mi>
+        <mrow>
+          <mi>
+            T
+          </mi>
+        </mrow>
+      </msub>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      x_{\\mathchoice{D}{T}{\\sum_{k = 0}^{\\infty} x^k}{SS}}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should render mathchoice as if there was nothing 4`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <msub>
+        <mi>
+          x
+        </mi>
+        <msub>
+          <mi>
+            y
+          </mi>
+          <mrow>
+            <mi>
+              T
+            </mi>
+          </mrow>
+        </msub>
+      </msub>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      x_{y_{\\mathchoice{D}{T}{S}{\\sum_{k = 0}^{\\infty} x^k}}}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should set href attribute for href appropriately 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mrow href="http://example.org">
+        <mi>
+          α
+        </mi>
+      </mrow>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\href{http://example.org}{\\alpha}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should use <menclose> for colorbox 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <menclose mathbackground="red">
+        <mrow>
+          <mtext>
+            b
+          </mtext>
+        </mrow>
+      </menclose>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\colorbox{red}{b}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should use <mpadded> for raisebox 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mpadded voffset="0.25em">
+        <mrow>
+          <mtext>
+            b
+          </mtext>
+        </mrow>
+      </mpadded>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\raisebox{0.25em}{b}
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should use <msupsub> for regular operators 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mstyle scriptlevel="0"
+              displaystyle="false"
+      >
+        <msubsup>
+          <mo>
+            ∑
+          </mo>
+          <mi>
+            a
+          </mi>
+          <mi>
+            b
+          </mi>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\textstyle\\sum_a^b
+    </annotation>
+  </semantics>
+</math>
+
+`;
+
+exports[`A MathML builder should use <munderover> for large operators 1`] = `
+
+<math>
+  <semantics>
+    <mrow>
+      <mstyle scriptlevel="0"
+              displaystyle="true"
+      >
+        <munderover>
+          <mo>
+            ∑
+          </mo>
+          <mi>
+            a
+          </mi>
+          <mi>
+            b
+          </mi>
+        </munderover>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">
+      \\displaystyle\\sum_a^b
+    </annotation>
+  </semantics>
+</math>
+
+`;

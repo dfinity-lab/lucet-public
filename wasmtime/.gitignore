@@ -1,0 +1,16 @@
+*.bk
+*.pyc
+*.swo
+*.swp
+*.swx
+*~
+.*.rustfmt
+.mypy_cache
+\#*\#
+cranelift.dbg*
+docs/_build
+docs/book
+.vscode/
+rusty-tags.*
+tags
+target
